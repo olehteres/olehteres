@@ -1,0 +1,351 @@
+/* parallax */ 
+.parallax-container {
+    position: absolute;
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+    z-index: -1;
+    box-shadow: inset 0 -90px 90px rgba(0, 0, 0, 1);
+    transform: scale(1.07) translateY(2%);
+  }
+  
+  .parallax-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 2px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .parallax_overlay {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    background-color: black;
+    height: 5%;
+  }
+  .parallax-layer-1 {
+    background-image: url('/images/paralax1.png');
+  }
+  
+  .parallax-layer-2 {
+    background-image: url('/images/paralax2.png');
+  }
+  
+  .parallax-layer-3 {
+    background-image: url('/images/paralax3.png');
+  }
+  
+  .parallax-layer-4 {
+    background-image: url('/images/paralax4.png');
+  }
+  
+  .parallax-layer-5 {
+    background-image: url('/images/paralax5.png');
+  }
+
+
+/* background    */
+body {
+    background-color: black;
+    color: white;
+    height: 56px;
+    font-family: Roboto Mono;
+    font-size: 20px;
+}
+/* header    */
+
+header {
+    background-color: black;
+    display: flex;
+}
+header img {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 5px;
+    margin: auto 0;
+}
+.header__menu  {
+    padding: 15px;
+    display: flex;
+    margin: auto 0;
+}
+.header__menu * {
+    padding: 0 20px 0 20px;
+    margin: auto 0;
+}
+
+.header__menu__download {
+    background-color: #DE232C;
+    padding: 7px 0px;
+    margin-right: 10px;
+}
+
+.login_sign_up {
+    margin: auto 0;
+    margin-left: auto;
+    padding-right: 60px;
+    display: flex;
+}
+
+.login_sign_up__sign_up{
+    color: #DE232C;
+    font-weight: 700;
+}
+
+.login_sign_up__divider {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* content    */
+
+/** banner section   **/
+.content{
+	border: 1px solid;
+	border-image: linear-gradient(to bottom, black, rgb(123, 123, 123)) 1 100% stretch;
+    position: relative;
+    box-shadow: 0px 1px 0px 0px rgb(123, 123, 123);
+    z-index: 1;
+    padding: 20px;
+    width: 782px;
+    min-height: 200px;
+    background-color: black;
+    margin: 0 auto;
+    margin-top:30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content__download_button{
+    margin-top: -50px;
+    background-color: #DE232C;
+    height: 58px;
+    width: 284px;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    font-weight: 700;
+    box-shadow: 0 0 15px #DE232C;
+    color: white;
+    text-decoration: none;
+}
+
+.banner_section {
+    padding: 26px;
+    padding-top: 30px;
+    line-height: 25px;
+}
+
+.banner__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner__content__information{
+    padding-left: 18px;
+}
+
+.banner__content__information__title {
+    color: #DE232C;
+    margin-bottom: 10px;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.banner__slider{
+    margin-top: 10px;
+}
+
+
+/** last_news section   **/
+
+.last_news_section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.last_news__title{
+    font-size: 24;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+.last_news__items{
+    display: flex;
+    flex-wrap: wrap
+}
+.last_news__items__item{
+    width: 50%; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    margin-bottom:50px; 
+}
+.last_news__items_item__information {
+    margin-left: 20px;
+}    
+.last_news__items_item__information__title {
+    margin-bottom: 15px;
+    color: #DE232C;
+} 
+.last_news__items_item__information__text {
+    font-size: 11px;
+    margin-right: 50px;
+    line-height: 130%;
+    font-weight: 300;
+} 
+
+
+/* footer */
+
+footer{
+    background-color: black;
+    border: 1px solid;
+    border-color: rgb(123, 123, 123);
+    min-height: 50px;
+    width: 782px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 40px;
+    color:#FFF;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.footer__sections{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.footer__sections > div{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/** Animations **/
+
+/* Header */
+
+.header__menu a, .login_sign_up__login  {
+    text-decoration: none;
+    color:white;
+    transition: color 0.3s ease;
+}
+.login_sign_up__sign_up{
+    color: #DE232C;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.login_sign_up__sign_up:hover{
+    text-shadow: 0 0 10px #DE232C;
+    text-decoration: none;
+}
+.header__menu a:not(.header__menu__download,.login_sign_up__sign_up):hover, .login_sign_up a:hover {
+    color: #DE232C;
+    transition: color 0.3s ease;
+  }
+.header__menu__download:hover {
+    box-shadow: 0 0 20px #DE232C;
+    transition: color 0.3s ease;
+}
+
+/*content download button */
+.content__download_button:hover {
+    transition: background-color 0.1s ease;
+    background-color:#9d1b21;
+    box-shadow: 0 0 0 #DE232C;
+}
+
+
+/* footer */ 
+
+.footer__sections a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer__sections a:hover {
+    color: #DE232C;
+  }
+
+/* slider */
+
+.banner__content__image img{
+    width: 370px;
+    height: 208px;
+}
+
+.banner__slider-btn {
+    background-color: transparent;
+    border: none;
+    color: #DE232C;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .banner__slider-btn:hover {
+    color: #C11F26;
+  }
+  
+  .banner__slider-btn--prev {
+    margin-right: 10px;
+  }
+  
+
+
+.auth_container{
+    position: relative;
+    margin: auto auto;
+    width: 669px;
+    height: 442px;
+    background-image: url('/images/Rectangle 21.png');
+    border: 8px solid;
+    border-color: #DE232C;
+}
+.auth_container__close{
+    height: 60px;
+    width: 55px;
+    background-image: url('/images/Group 1.png');
+    position: absolute;
+    top: -5px; 
+    right: 0;
+    background-color: #DE232C;
+}
+.auth_block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.auth_title {
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 34px;
+}
+.input_block{
+    display: flex;
+    flex-direction: column;
+}
+
+.auth_item{
+    display: flex;
+    justify-content: right;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.text_field {
+    margin-right: 5px;
+}
