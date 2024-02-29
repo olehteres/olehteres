@@ -13,9 +13,77 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-
 </head>
 <body>
+
+
+<div id="auth_login_modal" class="modal_auth">
+    <div class="auth_container">
+        <div class="auth_container__close"></div>
+        <div class="auth_block">
+            <div class="auth_title">Авторизація</div>
+            <div class="input_block">
+                <div class="auth_item">
+                    <div class="text_field">Пошта</div>
+                    <input type="text" placeholder="example@mail.ua" />
+                </div>
+                <div class="auth_item">
+                    <div class="text_field">Пароль</div>
+                    <input type="password" placeholder="password" />
+                </div>
+            </div>
+            <div class="auth_button">Увійти</div>
+            <div class="auth_bottom_buttons">
+                <div class="forgot_password_button">
+                    <a href="#" class="auth_bottom_button">Забув пароль</a>
+                </div>
+                <div class="divider">|</div>
+                <div class="registration_choose_button">
+                    <a href="#" class="auth_bottom_button">Реєстрація</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="auth_registration_modal" class="modal_reg">
+  <div class="auth_container_reg">
+      <div class="auth_container__close"></div>
+      <div class="auth_block">
+          <div class="auth_title">Реєстрація</div>
+          <div class="input_block">
+              <div class="auth_item">
+                  <div class="text_field">Пошта</div>
+                  <input type="text" placeholder="example@mail.ua" />
+              </div>
+              <div class="auth_item">
+                  <div class="text_field">Нікнейм</div>
+                  <input type="text" placeholder="user" />
+              </div>
+              <div class="auth_item">
+                  <div class="text_field">Пароль</div>
+                  <input type="text" placeholder="******" />
+              </div>
+              <div class="auth_item">
+                  <div class="text_field">Повт. Пароль</div>
+                  <input type="password" placeholder="******" />
+              </div>
+          </div>
+          <div class="auth_button">Зареєструватись</div>
+          <div class="auth_bottom_buttons">
+              <div class="forgot_password_button">
+                  <a href="#" class="auth_bottom_button">Забув пароль</a>
+              </div>
+              <div class="divider">|</div>
+              <div class="registration_choose_button">
+                  <a href="#" class="auth_bottom_button">Вхід</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+  <div id="for_form_overlay" class="for_form_overlay"></div>
   <div class="parallax-container">
     <div class="parallax-layer parallax-layer-1"></div>
     <div class="parallax-layer parallax-layer-2"></div>
@@ -34,13 +102,13 @@
       <a href="support-page.html" class="header__menu__support">Підтримка</a>
     </div>
     <div class="login_sign_up">
-      <a href="#" class="login_sign_up__login">Login</a>
+      <a href="#" id="login-link" class="login_sign_up__login">Login</a>
       <div class="login_sign_up__divider">/</div>
-      <a href="#" class="login_sign_up__sign_up">Sign Up</a>
+      <a href="#" id="signup-link" class="login_sign_up__sign_up">Sign Up</a>
     </div>
   </header>
   <div class="content">
-    <a href="your-link.html" class="content__download_button">
+    <a href="#" class="content__download_button">
       <div>СКАЧАТИ ЛАУНЧЕР</div>
     </a>
     <div class="content__container">
@@ -175,5 +243,6 @@
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
   <script src="/js/slider.js"></script>
+  <script src="/js/modal.js"></script>
 </body>
 </html>
