@@ -81,9 +81,9 @@
       </div>
   </div>
 </div>
-
-
   <div id="for_form_overlay" class="for_form_overlay"></div>
+
+
   <div class="parallax-container">
     <div class="parallax-layer parallax-layer-1"></div>
     <div class="parallax-layer parallax-layer-2"></div>
@@ -93,12 +93,14 @@
     <div class="parallax_overlay"></div>
   </div>
   <header>
-    <img src="images/MineLogo.svg" alt="Логотип">
+    <a class="header__logo" href="index.html">
+      <img src="images/MineLogo.svg" alt="Логотип">
+    </a>
     <div class="header__menu">
       <a href="#" class="header__menu__download">
         <p>Скачати</p>
       </a>
-      <a href="about_project-page.html" class="header__menu__about_project">Про проект</a>
+      <a href="about_project.html" class="header__menu__about_project">Про проект</a>
       <a href="support-page.html" class="header__menu__support">Підтримка</a>
     </div>
     <div class="login_sign_up">
@@ -208,12 +210,12 @@
     <div class="footer__sections">
       <div class="footer__left_section">
         <a href="download-link.html" class="footer__left_section__download">Скачати лаунчер</a>
-        <a href="about-us-link.html" class="footer__left_section__Aboutus">Про нас</a>
+        <a href="about_project.html" class="footer__left_section__Aboutus">Про нас</a>
         <a href="news-link.html" class="footer__left_section__last_news">Новини</a>
       </div>
       <div class="footer__center_section">
-        <a href="register-link.html" class="footer__center_section__reg">Зарєструватись</a>
-        <a href="login-link.html" class="footer__center_section__login">Увійти</a>
+        <a href="#" id="footer-login-link" class="footer__center_section__login">Увійти</a>
+        <a href="#" id="footer-signup-link" class="footer__center_section__reg">Зарєструватись</a>
       </div>
       <div class="footer__right_section">
         <a href="youtube-link.html" class="footer__right_section__youtube">Youtube</a>
@@ -222,27 +224,12 @@
       </div>
     </div>
   </footer>
-  <script>
-    const parallaxLayers = document.querySelectorAll('.parallax-layer');
-
-    document.addEventListener('mousemove', (event) => {
-      const mouseX = event.clientX;
-      const mouseY = event.clientY;
-
-      parallaxLayers.forEach((layer, index) => {
-        const speed = (5 - index)*20;
-        const x = (mouseX - window.innerWidth / 2) / speed;
-        const y = (mouseY - window.innerHeight / 2) / speed;
-
-        layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
-      });
-    });
-  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
   <script src="/js/slider.js"></script>
   <script src="/js/modal.js"></script>
+  <script src="/js/parallax.js"></script>
 </body>
 </html>

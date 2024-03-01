@@ -4,6 +4,11 @@ const loginForm = document.getElementById('auth_login_modal');
 const signupForm = document.getElementById('auth_registration_modal');
 const overlay = document.getElementById('for_form_overlay');
 const closeButtons = document.querySelectorAll('.auth_container__close');
+const footerLoginLink = document.getElementById('footer-login-link');
+const footerSignupLink = document.getElementById('footer-signup-link');
+
+
+
 function openModal(modalId) {
     const modal = document.getElementById(modalId);
     modal.classList.add('active');
@@ -23,6 +28,14 @@ function openModal(modalId) {
   });
   
   signupLink.addEventListener('click', () => {
+    openModal('auth_registration_modal');
+  });
+
+  footerLoginLink.addEventListener('click', () => {
+    openModal('auth_login_modal');
+  });
+  
+  footerSignupLink.addEventListener('click', () => {
     openModal('auth_registration_modal');
   });
 

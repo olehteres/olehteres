@@ -60,12 +60,13 @@ header {
     background-color: black;
     display: flex;
 }
-header img {
+.header__logo {
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 5px;
     margin: auto 0;
 }
+
 .header__menu  {
     padding: 15px;
     display: flex;
@@ -437,4 +438,58 @@ footer{
 
 .auth_container__close:hover{
     background-color: #882328;
+}
+
+
+/** about project **/
+
+.content_about_project{
+    border: 1px solid;
+	border-image: linear-gradient(to bottom, black, rgb(123, 123, 123)) 1 100% stretch;
+    position: relative;
+    box-shadow: 0px 1px 0px 0px rgb(123, 123, 123);
+    z-index: 1;
+    padding: 20px;
+    width: 782px;
+    min-height: 200px;
+    background-color: black;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_project{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about_project__title{
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.about_project__items__item{
+    display: flex;
+    font-size: 16px;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.about_project__items__item__text{
+    max-width: 332px;
+}
+.about_project_image_left, .about_project_image_right{
+    width: 301px;
+    height: 159px;
+}
+.about_project_image_left{
+    padding-right: 30px;
+}
+.about_project_image_right{
+    padding-left: 30px;
 }
