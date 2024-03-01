@@ -482,6 +482,7 @@ footer{
 }
 .about_project__items__item__text{
     max-width: 332px;
+    line-height: 25px;
 }
 .about_project_image_left, .about_project_image_right{
     width: 301px;
