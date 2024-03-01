@@ -123,6 +123,7 @@ header {
 }
 
 .content__download_button{
+    transition: transform 0.3s ease;
     margin-top: -50px;
     background-color: #DE232C;
     height: 58px;
@@ -263,9 +264,10 @@ footer{
 
 /*content download button */
 .content__download_button:hover {
-    transition: background-color 0.1s ease;
+    transition: background-color 0.1s ease, transform 0.1s ease;
     background-color:#9d1b21;
     box-shadow: 0 0 0 #DE232C;
+    transform: translateY(-8px);
 }
 
 
