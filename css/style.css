@@ -283,6 +283,17 @@ footer{
     color: #DE232C;
   }
 
+  .social{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  .social_logo{
+    max-width: 20px;
+    padding-right: 5px;
+  }
+
 /* slider */
 
 .banner__content__image img{
